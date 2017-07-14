@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<glossary>
+  <message>t1m1</message>
+  <title>t1</title>
+  <GlossDiv>
+    <title>t2</title>
+    <message>t2m2</message>
+  </GlossDiv>
+  <GlossDiv>
+    <title>t3</title>
+    <message>t3m3</message>
+  </GlossDiv>
+</glossary>

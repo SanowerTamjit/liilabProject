@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.santam.liilabproject.FourthActivity">
+
+    <RelativeLayout
+        android:id="@+id/imgTxtLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/TxtImgView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/liilab"
+            android:gravity="top"
+            android:text="This is a Textview which is showing an image.
+This is a Textview which is showing an image.
+This is a Textview which is showing an image.
+This is a Textview which is showing an image." />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/imgTxtLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="?attr/colorButtonNormal">
+
+        <com.santam.liilabproject.CanvasView
+            android:id="@+id/canvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnClear"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnSubmit"
+        android:layout_alignBottom="@+id/btnSubmit"
+        android:layout_alignEnd="@+id/framelayout"
+        android:layout_marginEnd="16dp"
+        android:text="CLEAR"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/framelayout"
+        android:layout_below="@+id/framelayout"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="35dp"
+        android:text="SUBMIT"
+        android:textSize="22sp" />
+
+    <!--<org.yourpackage.scribble.DrawView-->
+    <!--android:id="@+id/drawView1"-->
+    <!---->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--</at.gru.android.drawdemo.DrawView>-->
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/scrn1"
+        android:titleCondensed="Persist"
+        android:title="Go To Screen 1" />
+
+    <item android:id="@+id/scrn2"
+        android:titleCondensed="Persist"
+        android:title="Go To Screen 2" />
+
+    <item android:id="@+id/scrn3"
+        android:titleCondensed="Persist"
+        android:title="Go To Screen 3" />
+
+    <item android:id="@+id/scrn4"
+        android:titleCondensed="Persist"
+        android:title="Go To Screen 4" />
+
+</menu>

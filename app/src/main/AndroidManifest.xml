@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.santam.liilabproject">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/liilab"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/liilab"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".FirstActivity"
+            />
+        <activity android:name=".ThirdActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".FirstActivity"
+            />
+        <activity android:name=".FourthActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".FirstActivity" />
+    </application>
+
+</manifest>
